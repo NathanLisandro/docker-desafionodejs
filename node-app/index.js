@@ -1,14 +1,13 @@
 const express = require('express');
 const mysql = require('mysql');
-
 const app = express();
-const port = 3000;
 
+const port = 3000;
 const db = mysql.createConnection({
-  host: 'mysql',
-  user: 'root',
-  password: 'root',
-  database: 'desafionode'
+  host: 'mysql', 
+  user: 'usuario',
+  password: 'teste',
+  database: 'desafionode2'
 });
 
 db.connect((err) => {
