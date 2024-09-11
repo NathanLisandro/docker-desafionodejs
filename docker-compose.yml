@@ -30,7 +30,6 @@ services:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-proot"]
       interval: 10s
       retries: 5
-      start_period: 30s
       timeout: 5s
 
   nginx:
